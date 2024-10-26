@@ -1,0 +1,12 @@
+document.getElementById('wishForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent page from reloading
+
+    const wish = document.getElementById('wishInput').value;
+
+    // Simulate sending the wish to a backend (for demo purposes, just log it)
+    console.log('Wish received:', wish);
+
+    // Display thank-you message
+    document.getElementById('thankYouMessage').classList.remove('hidden');
+    document.getElementById('wishForm').classList.add('hidden');
+});
